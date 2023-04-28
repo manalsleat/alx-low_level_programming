@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print_numbers - print 0 - 9
- * only using _putcher twice
+ * print_numbers - print from 0 to 9
+ * followed by a new line
  *
  * Return: always 0 (success)
  */
@@ -14,6 +14,5 @@ void print_numbers(void)
 		_putcher(num + 48);
 		num++;
 	} while (num >= 0 && num <= 9);
-	_putcher('n\n')
+	_putcher('\n')
 }
-
